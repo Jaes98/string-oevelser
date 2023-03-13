@@ -2,12 +2,9 @@
 
 const fullName = "Marcus Folmer Jaes";
 
-let startIndex = fullName.lastIndexOf(" ");
-let lastWord = fullName.substring(startIndex + 1);
+let lastIndex = fullName.lastIndexOf(" ");
+let startIndex = fullName.indexOf(" ");
 
-let firstSpace = fullName.indexOf(" ");
-let firstsSpace = fullName.substring(firstSpace + 1);
-
-console.log(fullName.substring(0, firstSpace))
-console.log(fullName.substring(firstsSpace, startIndex))
-console.log(lastWord);
+console.log(fullName.substring(0, startIndex));
+console.log(fullName.substring(startIndex+1, lastIndex));
+console.log(fullName.substring(lastIndex+1));
